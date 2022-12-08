@@ -1,0 +1,335 @@
+/*  header elements */
+
+a {
+  color: white;
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+
+
+/*  this is the home button*/
+
+button {
+backdrop-filter: blur(10px) saturate(70%);
+font-family: 'Barlow', sans-serif;
+text-transform: capitalize;
+
+}
+
+
+/* these are the body elements of each page */
+
+h1 {
+  text-transform: uppercase;
+font-family: 'Bellefair', serif;
+text-transform: uppercase;
+}
+
+h4 {
+font-family: 'Barlow', sans-serif;
+text-transform: uppercase;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+  padding: 20px 20px 20px 20px;
+}
+
+.p-explore {
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+  color: black;
+width:100%;
+height: 100%;
+}
+
+.body-right-explore {
+  background-color: white;
+  border-radius: 100px;
+  display: inline;
+  position: absolute;
+  right: 0;
+  margin: 15% 5% 10% auto;
+  padding: 25px 25px;
+  margin: 25% 5% auto auto;
+
+}
+
+.index-body {
+color: white;
+background-color: grey;
+background-image: url("../assets/home/background-home-desktop.jpg");
+background-attachment: fixed;
+background-size: 100% 100%;
+margin: auto 0 auto auto;
+}
+
+.crew-body {
+  background-image: url("../assets/crew/background-crew-desktop.jpg");
+  color: white;
+  background-color: grey;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;
+}
+
+#commander {
+  float: left;
+}
+
+.destination-body {
+  color: white;
+  background-color: grey;
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#destination-img {
+  float: left;
+}
+
+.technology-body {
+  color: white;
+  background-color: grey;
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#technology-img-spaceport {
+  margin: auto auto auto 20%;
+}
+
+#technology-img-vehicle {
+  margin: auto auto auto 20%;
+}
+.body-left {
+display: inline;
+position: absolute;
+left: 0;
+margin: 100px auto auto 10%;
+width: 50%;
+line-height: 2;
+}
+
+
+.body-right {
+display: inline;
+position: absolute;
+right: 0;
+margin: 15% 5% 10% auto;
+padding: 25px 25px;
+margin: 25% 5% auto auto;
+
+}
+
+/*  this is for the header links of reach page */
+
+.header-row {
+  display: flex;
+  width: 50%;
+  height: 100px;
+  margin: 20px 0 auto 50%;
+  backdrop-filter: blur(10px) saturate(70%);
+}
+
+.header-row div {
+  flex-direction: row;
+}
+
+
+/*  Home button */
+.home-button {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+
+}
+
+.home-button a {
+  text-decoration: none;
+  filter: none;
+  font-family: 'Barlow', sans-serif;
+  text-transform: capitalize;
+
+
+}
+
+/* Dropdown Button */
+.dropbtn-crew {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-crew {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-crew {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  z-index: 1;
+  margin: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-crew a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  border: solid white;
+  display: block;
+  background-color: transparent;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-crew a:hover {
+  font-weight: bolder;}
+
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content-crew {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn-crew {
+  background-color: transparent;
+}
+
+
+
+/**** New hover starts here***/
+
+
+/* Dropdown Button */
+.dropbtn-technology {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-technology {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-technology {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  z-index: 1;
+}
+
+
+
+/* Links inside the dropdown */
+.dropdown-content-technology a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  border: white solid;
+  background-color: transparent;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-technology a:hover {
+font-weight: bolder;}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content-technology {display: block;
+
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn-technology {background-color: transparent;}
+
+
+
+/**** new hover starts here *** /
+
+/* to perfectly center the div buttons-hovers in header-row I had to turn the buttons into paragraphs so I could center
+destination, crew & technology , so I gave the p elements IDs so they wouldn't have the same elements as the other ps, and i needed
+to give ID's bc I can,  element - class - id */
+
+#destination {
+  line-height: 1;
+  margin: 0;
+}
+
+
+/* Dropdown Button */
+.dropbtn-destination {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 1em;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-destination {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-destination {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  z-index: 1;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content-destination a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  border: solid white;
+  background-color: transparent;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-destination a:hover {
+font-weight: bolder;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content-destination{
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn-destination { background-color: transparent;}
